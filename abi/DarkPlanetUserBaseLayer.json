@@ -1,0 +1,380 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "activate",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "mySummoner",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "exile",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getActivePeriod",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "getLandLocationForSummoner",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getMaxSummonersAmount_Land",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerAmount_MyLand",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerInfo",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r_result",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "r_state",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rTime",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "mySummoner",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerInfo_MyLand",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r_result",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "r_state",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "tTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rTime",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerState",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "state",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "summoner",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerTimeInfo",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "result",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "state",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lTime",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "mySummoner",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sIndex",
+				"type": "uint256"
+			}
+		],
+		"name": "getSummonerTimeInfo_MyLand",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "r_result",
+				"type": "bool"
+			},
+			{
+				"internalType": "uint256",
+				"name": "r_state",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lTime",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "rlsAddr",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "activePeriod",
+				"type": "uint256"
+			}
+		],
+		"name": "setActivePeriod",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "maxValue",
+				"type": "uint256"
+			}
+		],
+		"name": "setMaxSummoners",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "rls",
+				"type": "address"
+			}
+		],
+		"name": "setRLS",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
